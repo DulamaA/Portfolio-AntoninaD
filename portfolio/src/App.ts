@@ -29,10 +29,47 @@ const App = (): HTMLElement => {
   <h2>About Me</h2>
   <div class= "about-content">
   <img src="/public/images/profile.jpg" alt="Antonina Dulama" class="profile-img"/>
-  <p>Lorem ipsilom</p>
+  <p>My background is in project management with a Master's in European Business and Management. After becoming a parent, I decided to change paths and follow my passion for web development.</p>
   </div>
   `;
   container.appendChild(aboutSection);
+
+  //TECH section
+  const techSection = document.createElement('section');
+  techSection.id = 'tech';
+
+  const techTitle = document.createElement('h2');
+  techTitle.textContent = 'Tech I Use';
+
+  const techTimeline = document.createElement('div');
+  techTimeline.className = 'tech-timeline';
+
+  const techs = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'TypeScript',
+    'SCSS',
+    'Vite',
+    'Git',
+    'API',
+  ];
+
+  techs.forEach((tech, index) => {
+    const techSpan = document.createElement('span');
+    techSpan.textContent = tech;
+    techTimeline.appendChild(techSpan);
+
+    if (index < techs.length - 1) {
+      const arrow = document.createElement('span');
+      arrow.textContent = '→';
+      techTimeline.appendChild(arrow);
+    }
+  });
+
+  techSection.appendChild(techTitle);
+  techSection.appendChild(techTimeline);
+  container.appendChild(techSection);
 
   //PROJECTS section
   const projectsGrid = document.createElement('section');
@@ -64,9 +101,18 @@ const App = (): HTMLElement => {
     github: 'https://github.com/DulamaA/react-weather-app',
   });
 
+  const project4 = ProjectCard({
+    image: '/public/images/MelsDriveIn.jpg',
+    title: 'Mels Drive In',
+    description:
+      'Mels drive-in project is a school assignment at Graphic tools course, where we developed a website about movies based on a design created by another group. The purpose of the project was to practice component-based development in Vue.js while collaborating with other people.',
+    github: 'https://github.com/DulamaA/Graphic-tools-school-project',
+  });
+
   projectsGrid.appendChild(project1);
   projectsGrid.appendChild(project2);
   projectsGrid.appendChild(project3);
+  projectsGrid.appendChild(project4);
   container.appendChild(projectsGrid);
 
   //CONTACT section

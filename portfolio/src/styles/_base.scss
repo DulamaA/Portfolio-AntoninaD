@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+body.light {
+  background:
+    linear-gradient(rgba(246, 208, 231, 0.4), rgba(246, 208, 231, 0.4)),
+    url('/images/waves.jpg') no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--color-text-light);
+}
+
+body.dark {
+  background: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
