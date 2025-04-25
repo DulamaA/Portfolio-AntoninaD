@@ -124,3 +124,25 @@ body.light .project-card {
   text-decoration: none;
   font-weight: bold;
 }
+
+.scroll-nav {
+  position: fixed;
+  top: 30%;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: var(--color-accent);
+  }
+}
