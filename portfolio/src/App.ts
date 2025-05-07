@@ -5,17 +5,17 @@ const App = (): HTMLElement => {
   const container = document.createElement('div');
   container.className = 'app-wrapper';
 
-  //Add scroll navigation
-  const scrollNav = document.createElement('nav');
-  scrollNav.className = 'scroll-nav';
-  scrollNav.innerHTML = `
+  // Navigation
+  const nav = document.createElement('nav');
+  nav.className = 'top-nav';
+  nav.innerHTML = `
   <a href="#hero">Home</a>
   <a href="#about">About me</a>
+  <a href="#tech">Tech</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
-  `;
-
-  container.appendChild(scrollNav);
+`;
+  container.appendChild(nav);
 
   //HERO section
   const heroSection = Hero();
@@ -26,7 +26,7 @@ const App = (): HTMLElement => {
   const aboutSection = document.createElement('section');
   aboutSection.id = 'about';
   aboutSection.innerHTML = `
-  <h2>About Me</h2>
+  <h2 class="section-title">About Me</h2>
   <div class= "about-content">
   <img src="/public/images/profile.jpg" alt="Antonina Dulama" class="profile-img"/>
   <p>My background is in project management with a Master's in European Business and Management. After becoming a parent, I decided to change paths and follow my passion for web development.</p>
@@ -40,6 +40,7 @@ const App = (): HTMLElement => {
 
   const techTitle = document.createElement('h2');
   techTitle.textContent = 'Tech I Use';
+  techTitle.className = 'section-title';
 
   const techTimeline = document.createElement('div');
   techTimeline.className = 'tech-timeline';
@@ -75,7 +76,7 @@ const App = (): HTMLElement => {
   const projectsGrid = document.createElement('section');
   projectsGrid.id = 'projects';
   projectsGrid.className = 'project-grid';
-  projectsGrid.innerHTML = '<h2>Projects</h2>';
+  projectsGrid.innerHTML = '<h2 class="section-title">Projects</h2>';
 
   const project1 = ProjectCard({
     image: '/public/images/MarilynQuiz.jpg',
