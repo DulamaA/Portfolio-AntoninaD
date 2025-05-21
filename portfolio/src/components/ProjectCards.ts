@@ -1,24 +1,29 @@
-interface ProjectCardProps {
+interface ProjectProps {
   image: string;
   title: string;
   description: string;
   github: string;
-  tags?: string[];
+  demo?: string;
 }
 
-const ProjectCard = (props: ProjectCardProps): HTMLElement => {
+const ProjectCard = ({
+  image,
+  title,
+  description,
+  github,
+  demo,
+}: ProjectProps): HTMLElement => {
   const card = document.createElement('div');
   card.className = 'project-card';
 
-  const tagHtml =
-    props.tags?.map((tag) => `<span class="tag">${tag}</span>`).join(' ') || '';
-
   card.innerHTML = `
-    <img src="${props.image}" alt="${props.title} preview" />
-    <h3>${props.title}</h3>
-    <p>${props.description}</p>
-    <a href="${props.github}" target="_blank">View on GitHub</a>
-    <div class="tags">${tagHtml}</div>
+    <img src="${image}" alt="${title}" />
+    <h3>${title}</h3>
+    <p>${description}</p>
+    <div class="project-links">
+      ${demo ? `<a href="${demo}" target="_blank">Live Demo</a>` : ''}
+      <a href="${github}" target="_blank">GitHub</a>
+    </div>
   `;
 
   return card;
