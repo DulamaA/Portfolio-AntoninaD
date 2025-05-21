@@ -1,7 +1,7 @@
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 4rem;
   justify-items: center;
   padding: 1rem;
 
@@ -15,21 +15,28 @@
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: var(--color-card-bg);
+  color: var(--color-text-light);
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   width: 100%;
-  height: 100%;
+  max-width: 320px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  
 
   img {
     max-width: 100%;
-    height: 220px;
-    object-fit: cover;
+    height: 180px;
+    object-fit: contain;
     border-radius: 8px;
     margin-bottom: 1rem;
   }
@@ -40,15 +47,22 @@
   }
 
   p {
-    flex-grow: 1;
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    max-height: 6.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
   }
 
   .project-links {
     display: flex;
     gap: 1rem;
     margin-top: auto;
+    flex-wrap: wrap;
+    justify-content: center;
 
     a {
       background-color: var(--color-accent);
@@ -86,7 +100,7 @@
 
 #tech {
   text-align: center;
-  margin: 4rem auto;
+  margin: 2rem auto;
 
   .tech-timeline {
     display: flex;
