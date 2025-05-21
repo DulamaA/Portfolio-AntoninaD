@@ -135,12 +135,22 @@ const App = (): HTMLElement => {
     demo: 'https://dulamaa.github.io/CSS-client-project/',
   });
 
+  const project7 = ProjectCard({
+    image: '/images/BookAPI.jpg',
+    title: 'Book-API',
+    description:
+      'Book-API is a group project and a full-stack web application for managing books, users, and reviews. It is built with Node.js, Express, and MongoDB for the backend, and VUE for the frontend. The application allows users to create an account, add books to their collection, and leave reviews. It also includes features like user authentication, book search, and a responsive design.',
+    github: 'https://github.com/DulamaA/Book-API',
+    demo: 'https://book-client-topaz.vercel.app/',
+  });
+
   projectsGrid.appendChild(project1);
   projectsGrid.appendChild(project2);
   projectsGrid.appendChild(project3);
   projectsGrid.appendChild(project4);
   projectsGrid.appendChild(project5);
   projectsGrid.appendChild(project6);
+  projectsGrid.appendChild(project7);
   projectsSection.appendChild(projectsGrid);
   container.appendChild(projectsSection);
 
