@@ -145,12 +145,30 @@ const App = (): HTMLElement => {
   });
 
   const project8 = ProjectCard({
+    image: '/images/TheLastToDo.jpg',
+    title: 'The-last-todo',
+    description:
+      'The Last todo is a project built with React, TypeScript, and Tailwind. Supports adding, completing, sorting, and persisting tasks using state, localStorage, and lifting state up.',
+    github: 'https://github.com/DulamaA/The-last-todoo',
+    demo: 'dulamaa.github.io/The-last-todo/',
+  });
+
+  const project9 = ProjectCard({
     image: '/images/TheZoo.jpg',
     title: 'The Zoo',
     description:
       'The Zoo is a school project developed with React and TypeScript using React Router(layouts, child routes, error elements). Animals list and detail pages with image fallbacks, time-based feeding logic(3/4/5h), and state managed via Context + Reducer and a custom hook/service; styled with SCSS and subtle animations.',
     github: 'https://github.com/DulamaA/The-zoo',
     demo: 'https://dulamaa.github.io/The-zoo/',
+  });
+
+  const project10 = ProjectCard({
+    image: '/images/JobTech.jpg',
+    title: 'JobTech-Page',
+    description:
+      'JobTech-Page is a group project using the JobTech Open Data API to build a student designed job portal for IT positions in Swedenn. Implements data fetching via Axios services, state and context management, routing, and graphical data visualization. Styled with a custom design system for accessibility and responsive layout.',
+    github: 'https://github.com/DulamaA/Jobtech-Page',
+    demo: 'Coming soon!',
   });
 
   projectsGrid.appendChild(project1);
@@ -161,6 +179,8 @@ const App = (): HTMLElement => {
   projectsGrid.appendChild(project6);
   projectsGrid.appendChild(project7);
   projectsGrid.appendChild(project8);
+  projectsGrid.appendChild(project9);
+  projectsGrid.appendChild(project10);
   projectsSection.appendChild(projectsGrid);
   container.appendChild(projectsSection);
 
