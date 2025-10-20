@@ -144,6 +144,15 @@ const App = (): HTMLElement => {
     demo: 'https://book-client-topaz.vercel.app/',
   });
 
+  const project8 = ProjectCard({
+    image: '/images/TheZoo.jpg',
+    title: 'The Zoo',
+    description:
+      'The Zoo is a school project developed with React and TypeScript using React Router(layouts, child routes, error elements). Animals list and detail pages with image fallbacks, time-based feeding logic(3/4/5h), and state managed via Context + Reducer and a custom hook/service; styled with SCSS and subtle animations.',
+    github: 'https://github.com/DulamaA/The-zoo',
+    demo: 'https://dulamaa.github.io/The-zoo/',
+  });
+
   projectsGrid.appendChild(project1);
   projectsGrid.appendChild(project2);
   projectsGrid.appendChild(project3);
@@ -151,6 +160,7 @@ const App = (): HTMLElement => {
   projectsGrid.appendChild(project5);
   projectsGrid.appendChild(project6);
   projectsGrid.appendChild(project7);
+  projectsGrid.appendChild(project8);
   projectsSection.appendChild(projectsGrid);
   container.appendChild(projectsSection);
 
