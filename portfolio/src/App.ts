@@ -163,12 +163,12 @@ const App = (): HTMLElement => {
   });
 
   const project10 = ProjectCard({
-    image: '/images/JobTech.jpg',
+    image: '/images/Jobtech.png',
     title: 'JobTech-Page',
     description:
       'JobTech-Page is a group project using the JobTech Open Data API to build a student designed job portal for IT positions in Swedenn. Implements data fetching via Axios services, state and context management, routing, and graphical data visualization. Styled with a custom design system for accessibility and responsive layout.',
     github: 'https://github.com/DulamaA/Jobtech-Page',
-    demo: 'Coming soon!',
+    demo: 'https://jobtech-page.netlify.app/',
   });
 
   projectsGrid.appendChild(project1);
