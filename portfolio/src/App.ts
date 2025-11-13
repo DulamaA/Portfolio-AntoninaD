@@ -91,15 +91,6 @@ const App = (): HTMLElement => {
   });
 
   const project2 = ProjectCard({
-    image: '/images/Webbshop.jpg',
-    title: 'Gottfrids Muffin Factory',
-    description:
-      'Gottfrids Muffin Factory is a webshopp built with JavaScript, HTML and CSS. Includes real time cart updates, product sorting, a checkout form with validation, payment method selection, discount logic, and accessibility features. Built as part of a school project, following clean code practices using ESlint and Prettier.',
-    github: 'https://dulamaa.github.io/JS-Webbshop-project/',
-    demo: 'https://dulamaa.github.io/JS-Webbshop-project/',
-  });
-
-  const project3 = ProjectCard({
     image: '/images/WeatherApp.jpg',
     title: 'React Weather App',
     description:
@@ -108,34 +99,7 @@ const App = (): HTMLElement => {
     demo: 'https://voluble-semolina-f179f7.netlify.app/',
   });
 
-  const project4 = ProjectCard({
-    image: '/images/MelsDriveIn.jpg',
-    title: 'Mels Drive In',
-    description:
-      'Mels drive-in project is a school assignment at Graphic tools course, where we developed a website about movies based on a design created by another group. The purpose of the project was to practice component-based development in Vue.js while collaborating with other people.',
-    github: 'https://github.com/DulamaA/Graphic-tools-school-project',
-    demo: 'https://dulamaa.github.io/Graphic-tools-school-project/',
-  });
-
-  const project5 = ProjectCard({
-    image: '/images/CodeSmells.jpg',
-    title: 'Code-smells',
-    description:
-      'Code-smells is a project developed in JavaScript, HTML and CSS. It is a simple web application that helps users identify and understand common code smells in their code. The app provides explanations and examples of each code smell, along with tips on how to refactor the code to improve its quality.',
-    github: 'https://github.com/DulamaA/Code-smells',
-    demo: 'https://dulamaa.github.io/Code-smells/',
-  });
-
-  const project6 = ProjectCard({
-    image: '/images/ToughCookie.jpg',
-    title: 'Tough Cookie',
-    description:
-      'Tough Cookie is a school project developed in HTML and CSS. It is a client project where we had to create the design and layout of a website based on a given design. The project focuses on responsive design, accessibility, and clean code practices.',
-    github: 'https://dulamaa.github.io/CSS-client-project/',
-    demo: 'https://dulamaa.github.io/CSS-client-project/',
-  });
-
-  const project7 = ProjectCard({
+  const project3 = ProjectCard({
     image: '/images/BookAPI.jpg',
     title: 'Book-API',
     description:
@@ -144,16 +108,7 @@ const App = (): HTMLElement => {
     demo: 'https://book-client-topaz.vercel.app/',
   });
 
-  const project8 = ProjectCard({
-    image: '/images/TheLastToDo.jpg',
-    title: 'The-last-todo',
-    description:
-      'The Last todo is a project built with React, TypeScript, and Tailwind. Supports adding, completing, sorting, and persisting tasks using state, localStorage, and lifting state up.',
-    github: 'https://github.com/DulamaA/The-last-todoo',
-    demo: 'dulamaa.github.io/The-last-todo/',
-  });
-
-  const project9 = ProjectCard({
+  const project4 = ProjectCard({
     image: '/images/TheZoo.jpg',
     title: 'The Zoo',
     description:
@@ -162,7 +117,7 @@ const App = (): HTMLElement => {
     demo: 'https://dulamaa.github.io/The-zoo/',
   });
 
-  const project10 = ProjectCard({
+  const project5 = ProjectCard({
     image: '/images/Jobtech.png',
     title: 'JobTech-Page',
     description:
@@ -171,16 +126,21 @@ const App = (): HTMLElement => {
     demo: 'https://jobtech-page.netlify.app/',
   });
 
+  const project6 = ProjectCard({
+    image: '/images/Gitland.jpg',
+    title: 'Git-land-game',
+    description:
+      'My practice project: Git-Land is an interactive educational game that teaches Git step by step built with React + TypeScript, styled using Tailwind CSS, and bundled with Vite. Game progress is stored in localStorage so users can continue later.',
+    github: 'https://github.com/DulamaA/git-land-game',
+    demo: 'https://dulamaa.github.io/git-land-game/',
+  });
+
   projectsGrid.appendChild(project1);
   projectsGrid.appendChild(project2);
   projectsGrid.appendChild(project3);
   projectsGrid.appendChild(project4);
   projectsGrid.appendChild(project5);
   projectsGrid.appendChild(project6);
-  projectsGrid.appendChild(project7);
-  projectsGrid.appendChild(project8);
-  projectsGrid.appendChild(project9);
-  projectsGrid.appendChild(project10);
   projectsSection.appendChild(projectsGrid);
   container.appendChild(projectsSection);
 
