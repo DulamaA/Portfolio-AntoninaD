@@ -105,7 +105,7 @@ const App = (): HTMLElement => {
     description:
       'React Weather App is a weather application built with React and TypeScript. It uses the OpenWeather API to fetch weather data and displays it in a user-friendly interface. The app includes features like location search, current weather conditions, and a 5-day forecast.',
     github: 'https://github.com/DulamaA/react-weather-app',
-    demo: 'https://dulamaa.github.io/react-weather-app/',
+    demo: 'https://voluble-semolina-f179f7.netlify.app/',
   });
 
   const project4 = ProjectCard({
