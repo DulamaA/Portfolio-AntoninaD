@@ -54,18 +54,21 @@ const App = (): HTMLElement => {
     'Vite',
     'Git',
     'API',
+    'React',
+    'Node.js',
+    'Express',
+    'MongoDB',
+    'Vue',
+    'Tailwind CSS',
+    'WordPress',
+    'Figma',
   ];
 
   techs.forEach((tech, index) => {
     const techSpan = document.createElement('span');
     techSpan.textContent = tech;
+    techSpan.className = 'tech-badge';
     techTimeline.appendChild(techSpan);
-
-    if (index < techs.length - 1) {
-      const arrow = document.createElement('span');
-      arrow.textContent = '→';
-      techTimeline.appendChild(arrow);
-    }
   });
 
   techSection.appendChild(techTitle);
