@@ -29,7 +29,8 @@ const App = (): HTMLElement => {
   <h2 class="section-title">About Me</h2>
   <div class= "about-content">
   <img src="/images/profile.jpg" alt="Antonina Dulama" class="profile-img"/>
-  <p>My background is in project management with a Master's in European Business and Management. After becoming a parent, I decided to change paths and follow my passion for web development.</p>
+  <p>I recently graduated from Medieinstitutet as a Frontend Developer and have experience working with React, TypeScript, Next.js and API integrations during my LIA internships and school projects. 
+  I enjoy creating responsive and user-friendly web applications and have a growing interest in fullstack development, UI/UX and accessibility. My background in project management has strengthened my communication, collaboration and problem-solving skills.</p>
   </div>
   `;
   container.appendChild(aboutSection);
