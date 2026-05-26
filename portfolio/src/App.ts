@@ -40,7 +40,7 @@ const App = (): HTMLElement => {
   techSection.id = 'tech';
 
   const techTitle = document.createElement('h2');
-  techTitle.textContent = 'Tech I Use';
+  techTitle.textContent = 'Tech Stack';
   techTitle.className = 'section-title';
 
   const techTimeline = document.createElement('div');
@@ -134,7 +134,7 @@ const App = (): HTMLElement => {
     image: '/images/Naromarknad.png',
     title: 'Naromarknad',
     description:
-      'Närmarknad is a full-stack marketplace web application built with React, TypeScript, Node.js, Express, and MongoDB. The platform allows users to discover local food producers, manage listings through a protected seller dashboard, and explore locations using Leaflet/OpenStreetMap integration.',
+      'Näromarknad is my full-stack exam project built with React, TypeScript, Node.js, Express, and MongoDB. The platform helps users discover local food producers through an interactive marketplace with authentication, product management, API integrations, and map visualization using Leaflet/OpenStreetMap.',
     github: '',
     demo: 'https://wondrous-gelato-e8932a.netlify.app/',
   });
