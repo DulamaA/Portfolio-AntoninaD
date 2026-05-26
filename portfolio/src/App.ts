@@ -94,15 +94,6 @@ const App = (): HTMLElement => {
   });
 
   const project2 = ProjectCard({
-    image: '/images/WeatherApp.jpg',
-    title: 'React Weather App',
-    description:
-      'React Weather App is a weather application built with React and TypeScript. It uses the OpenWeather API to fetch weather data and displays it in a user-friendly interface. The app includes features like location search, current weather conditions, and a 5-day forecast.',
-    github: 'https://github.com/DulamaA/react-weather-app',
-    demo: 'https://voluble-semolina-f179f7.netlify.app/',
-  });
-
-  const project3 = ProjectCard({
     image: '/images/BookAPI.jpg',
     title: 'Book-API',
     description:
@@ -111,7 +102,7 @@ const App = (): HTMLElement => {
     demo: 'https://book-client-topaz.vercel.app/',
   });
 
-  const project4 = ProjectCard({
+  const project3 = ProjectCard({
     image: '/images/TheZoo.jpg',
     title: 'The Zoo',
     description:
@@ -120,7 +111,7 @@ const App = (): HTMLElement => {
     demo: 'https://dulamaa.github.io/The-zoo/',
   });
 
-  const project5 = ProjectCard({
+  const project4 = ProjectCard({
     image: '/images/Jobtech.png',
     title: 'JobTech-Page',
     description:
@@ -129,13 +120,22 @@ const App = (): HTMLElement => {
     demo: 'https://jobtech-page.netlify.app/',
   });
 
-  const project6 = ProjectCard({
+  const project5 = ProjectCard({
     image: '/images/Gitland.jpg',
     title: 'Git-land-game',
     description:
       'My practice project: Git-Land is an interactive educational game that teaches Git step by step built with React + TypeScript, styled using Tailwind CSS, and bundled with Vite. Game progress is stored in localStorage so users can continue later.',
     github: 'https://github.com/DulamaA/git-land-game',
     demo: 'https://dulamaa.github.io/git-land-game/',
+  });
+
+  const project6 = ProjectCard({
+    image: '/images/Naromarknad.png',
+    title: 'Naromarknad',
+    description:
+      'Närmarknad is a full-stack marketplace web application built with React, TypeScript, Node.js, Express, and MongoDB. The platform allows users to discover local food producers, manage listings through a protected seller dashboard, and explore locations using Leaflet/OpenStreetMap integration.',
+    github: '',
+    demo: 'https://wondrous-gelato-e8932a.netlify.app/',
   });
 
   projectsGrid.appendChild(project1);
@@ -154,7 +154,7 @@ const App = (): HTMLElement => {
   <h2>Contact Me</h2>
   <p>
   <i class="fas fa-envelope"></i>
-  <a href="mailto:antoninanicolau@yahoo.com">antoninanicolau@yahoo.com</a>
+  <a href="mailto:antoninanicolau88@gmail.com">antoninanicolau88@gmail.com</a>
 </p>
 <p>
   <i class="fab fa-linkedin"></i>

@@ -21,9 +21,9 @@ const ProjectCard = ({
     <h3>${title}</h3>
     <p>${description}</p>
     <div class="project-links">
-      ${demo ? `<a href="${demo}" target="_blank">Live Demo</a>` : ''}
-      <a href="${github}" target="_blank">GitHub</a>
-    </div>
+  ${demo ? `<a href="${demo}" target="_blank">Live Demo</a>` : ''}
+  ${github ? `<a href="${github}" target="_blank">GitHub</a>` : ''}
+</div>
   `;
 
   return card;
